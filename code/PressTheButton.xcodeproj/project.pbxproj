@@ -15,7 +15,7 @@
 		FC40C37B1C898B24001A31D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC40C3791C898B24001A31D3 /* LaunchScreen.storyboard */; };
 		FC40C3861C898B24001A31D3 /* PressTheButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC40C3851C898B24001A31D3 /* PressTheButtonTests.swift */; };
 		FC40C3911C898B24001A31D3 /* PressTheButtonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC40C3901C898B24001A31D3 /* PressTheButtonUITests.swift */; };
-		FC40C39F1C8991CE001A31D3 /* EasyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC40C39E1C8991CE001A31D3 /* EasyViewController.swift */; };
+		FCB2BDF41C89FF9600163E2A /* EasyLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB2BDF31C89FF9600163E2A /* EasyLevelViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +52,7 @@
 		FC40C38C1C898B24001A31D3 /* PressTheButtonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PressTheButtonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC40C3901C898B24001A31D3 /* PressTheButtonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressTheButtonUITests.swift; sourceTree = "<group>"; };
 		FC40C3921C898B24001A31D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FC40C39E1C8991CE001A31D3 /* EasyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EasyViewController.swift; path = ../../../EasyViewController.swift; sourceTree = "<group>"; };
+		FCB2BDF31C89FF9600163E2A /* EasyLevelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyLevelViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,10 +123,10 @@
 		FC40C36F1C898B24001A31D3 /* PressTheButton */ = {
 			isa = PBXGroup;
 			children = (
+				FCB2BDF31C89FF9600163E2A /* EasyLevelViewController.swift */,
 				FC40C3701C898B24001A31D3 /* AppDelegate.swift */,
 				FC40C3721C898B24001A31D3 /* ViewController.swift */,
 				FC40C3741C898B24001A31D3 /* Main.storyboard */,
-				FC40C39E1C8991CE001A31D3 /* EasyViewController.swift */,
 				FC40C3771C898B24001A31D3 /* Assets.xcassets */,
 				FC40C3791C898B24001A31D3 /* LaunchScreen.storyboard */,
 				FC40C37C1C898B24001A31D3 /* Info.plist */,
@@ -338,8 +338,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC40C3731C898B24001A31D3 /* ViewController.swift in Sources */,
+				FCB2BDF41C89FF9600163E2A /* EasyLevelViewController.swift in Sources */,
 				FC40C3711C898B24001A31D3 /* AppDelegate.swift in Sources */,
-				FC40C39F1C8991CE001A31D3 /* EasyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

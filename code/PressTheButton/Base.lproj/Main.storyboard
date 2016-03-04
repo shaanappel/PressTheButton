@@ -169,7 +169,7 @@
         <!--Easy-->
         <scene sceneID="x9e-Qs-GIj">
             <objects>
-                <viewController title="Easy" id="QDM-wS-Sbt" customClass="EasyViewController" customModule="PressTheButton" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Easy" id="QDM-wS-Sbt" customClass="EasyLevelViewController" customModule="PressTheButton" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Z5K-e9-bzx"/>
                         <viewControllerLayoutGuide type="bottom" id="fHI-Wa-XMw"/>
@@ -209,7 +209,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="F5Q-PD-atu"/>
                     <connections>
-                        <outlet property="movingButton" destination="kyC-RB-U6l" id="Q5A-XE-Xwm"/>
+                        <outlet property="movingButton" destination="kyC-RB-U6l" id="E5L-cT-Sts"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hho-U1-0i1" userLabel="First Responder" sceneMemberID="firstResponder"/>
