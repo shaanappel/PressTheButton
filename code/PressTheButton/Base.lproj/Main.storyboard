@@ -169,7 +169,7 @@
         <!--Easy-->
         <scene sceneID="x9e-Qs-GIj">
             <objects>
-                <viewController title="Easy" id="QDM-wS-Sbt" sceneMemberID="viewController">
+                <viewController title="Easy" id="QDM-wS-Sbt" customClass="EasyViewController" customModule="PressTheButton" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Z5K-e9-bzx"/>
                         <viewControllerLayoutGuide type="bottom" id="fHI-Wa-XMw"/>
