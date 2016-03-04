@@ -10,8 +10,13 @@ import SwiftSpinner
 
 class EasyViewController: UIViewController {
     var timer = NSTimer()
+    var difficultyAry = ["Easy", "Medium", "Hard", "Impossible"]
+    var currDifficulty = 0
+    var buttonMoveInterval = 1.0
+    var buttonMoveDuration = 0.2
 
     @IBOutlet weak var movingButton: UIButton!
+    @IBOutlet weak var difficultyLabel: UILabel!
     
     @IBAction func buttonPressed(sender: AnyObject) {
         timer.invalidate()
@@ -33,7 +38,7 @@ class EasyViewController: UIViewController {
         super.viewDidAppear(animated)
             
         self.runSpinner()
-        timer = NSTimer.scheduledTimerWithTimeInterval(0.7, target: self, selector: Selector("moveButton"), userInfo: nil, repeats: true)
+        timer = NSTimer.scheduledTimerWithTimeInterval(buttonMoveInterval, target: self, selector: Selector("moveButton"), userInfo: nil, repeats: true)
             
     }
         
@@ -62,7 +67,7 @@ class EasyViewController: UIViewController {
         
     func moveButton() {
             
-        UIView.animateWithDuration(0.2, delay: 0.0,
+        UIView.animateWithDuration(buttonMoveDuration, delay: 0.0,
             options: [], animations: {
                 // Find the button's width and height
                 let buttonWidth = self.movingButton.frame.width

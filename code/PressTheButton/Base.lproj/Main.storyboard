@@ -209,6 +209,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="F5Q-PD-atu"/>
                     <connections>
+                        <outlet property="difficultyLabel" destination="DJm-Wl-hdf" id="LGw-co-AyU"/>
                         <outlet property="movingButton" destination="kyC-RB-U6l" id="lVe-cs-ype"/>
                     </connections>
                 </viewController>
