@@ -24,7 +24,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Person" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="icd-mr-JUQ">
                                             <rect key="frame" x="24" y="11" width="54" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -71,10 +71,10 @@
             </objects>
             <point key="canvasLocation" x="708" y="-176"/>
         </scene>
-        <!--Item-->
+        <!--Info-->
         <scene sceneID="biu-iN-W9M">
             <objects>
-                <navigationController id="xVB-4T-J3g" sceneMemberID="viewController">
+                <navigationController title="Info" id="xVB-4T-J3g" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="SIL-Jn-gqN"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="q0b-W3-0AC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -106,7 +106,7 @@
                                     <constraint firstAttribute="width" constant="77" id="Rga-2x-mEs"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -148,7 +148,7 @@
                                     <constraint firstAttribute="width" constant="77" id="Fak-vB-f0v"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -184,9 +184,21 @@
                                     <constraint firstAttribute="width" constant="77" id="u9w-Cu-oou"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kyC-RB-U6l">
+                                <rect key="frame" x="122" y="246" width="76" height="76"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="titleShadowOffset" width="1" height="0.0"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="QDM-wS-Sbt" eventType="touchUpInside" id="M3V-Cm-y0f"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -196,6 +208,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="F5Q-PD-atu"/>
+                    <connections>
+                        <outlet property="movingButton" destination="kyC-RB-U6l" id="Q5A-XE-Xwm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hho-U1-0i1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
