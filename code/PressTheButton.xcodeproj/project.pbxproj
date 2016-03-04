@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4FF02C2B2F82A61546B4C6B2 /* Pods_PressTheButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A032CCB45AB0C972F407579 /* Pods_PressTheButton.framework */; };
 		FC40C3711C898B24001A31D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC40C3701C898B24001A31D3 /* AppDelegate.swift */; };
 		FC40C3731C898B24001A31D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC40C3721C898B24001A31D3 /* ViewController.swift */; };
 		FC40C3761C898B24001A31D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC40C3741C898B24001A31D3 /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		FC40C37B1C898B24001A31D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC40C3791C898B24001A31D3 /* LaunchScreen.storyboard */; };
 		FC40C3861C898B24001A31D3 /* PressTheButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC40C3851C898B24001A31D3 /* PressTheButtonTests.swift */; };
 		FC40C3911C898B24001A31D3 /* PressTheButtonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC40C3901C898B24001A31D3 /* PressTheButtonUITests.swift */; };
+		FC40C39F1C8991CE001A31D3 /* EasyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC40C39E1C8991CE001A31D3 /* EasyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A7BDBA55974E9D4F69ABFD1 /* Pods-PressTheButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PressTheButton.release.xcconfig"; path = "Pods/Target Support Files/Pods-PressTheButton/Pods-PressTheButton.release.xcconfig"; sourceTree = "<group>"; };
+		8A032CCB45AB0C972F407579 /* Pods_PressTheButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PressTheButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE0E5C8AB3ED6D6FCC5604E1 /* Pods-PressTheButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PressTheButton.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PressTheButton/Pods-PressTheButton.debug.xcconfig"; sourceTree = "<group>"; };
 		FC40C36D1C898B24001A31D3 /* PressTheButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PressTheButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC40C3701C898B24001A31D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC40C3721C898B24001A31D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +52,7 @@
 		FC40C38C1C898B24001A31D3 /* PressTheButtonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PressTheButtonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC40C3901C898B24001A31D3 /* PressTheButtonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressTheButtonUITests.swift; sourceTree = "<group>"; };
 		FC40C3921C898B24001A31D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC40C39E1C8991CE001A31D3 /* EasyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EasyViewController.swift; path = ../../../EasyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FF02C2B2F82A61546B4C6B2 /* Pods_PressTheButton.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +81,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		477D1F8E7AF7C208DEEE56AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A032CCB45AB0C972F407579 /* Pods_PressTheButton.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B741034D084D8C670F676786 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DE0E5C8AB3ED6D6FCC5604E1 /* Pods-PressTheButton.debug.xcconfig */,
+				1A7BDBA55974E9D4F69ABFD1 /* Pods-PressTheButton.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FC40C3641C898B24001A31D3 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +105,8 @@
 				FC40C3841C898B24001A31D3 /* PressTheButtonTests */,
 				FC40C38F1C898B24001A31D3 /* PressTheButtonUITests */,
 				FC40C36E1C898B24001A31D3 /* Products */,
+				B741034D084D8C670F676786 /* Pods */,
+				477D1F8E7AF7C208DEEE56AF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +126,7 @@
 				FC40C3701C898B24001A31D3 /* AppDelegate.swift */,
 				FC40C3721C898B24001A31D3 /* ViewController.swift */,
 				FC40C3741C898B24001A31D3 /* Main.storyboard */,
+				FC40C39E1C8991CE001A31D3 /* EasyViewController.swift */,
 				FC40C3771C898B24001A31D3 /* Assets.xcassets */,
 				FC40C3791C898B24001A31D3 /* LaunchScreen.storyboard */,
 				FC40C37C1C898B24001A31D3 /* Info.plist */,
@@ -132,9 +159,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FC40C3951C898B24001A31D3 /* Build configuration list for PBXNativeTarget "PressTheButton" */;
 			buildPhases = (
+				F13741BCAD9A285F10B128AE /* Check Pods Manifest.lock */,
 				FC40C3691C898B24001A31D3 /* Sources */,
 				FC40C36A1C898B24001A31D3 /* Frameworks */,
 				FC40C36B1C898B24001A31D3 /* Resources */,
+				65EB8DB29FDB1197D8CCC174 /* Embed Pods Frameworks */,
+				D8567205C84513E5B92E1E12 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,6 +284,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		65EB8DB29FDB1197D8CCC174 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PressTheButton/Pods-PressTheButton-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8567205C84513E5B92E1E12 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PressTheButton/Pods-PressTheButton-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F13741BCAD9A285F10B128AE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FC40C3691C898B24001A31D3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -261,6 +339,7 @@
 			files = (
 				FC40C3731C898B24001A31D3 /* ViewController.swift in Sources */,
 				FC40C3711C898B24001A31D3 /* AppDelegate.swift in Sources */,
+				FC40C39F1C8991CE001A31D3 /* EasyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,6 +477,7 @@
 		};
 		FC40C3961C898B24001A31D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE0E5C8AB3ED6D6FCC5604E1 /* Pods-PressTheButton.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PressTheButton/Info.plist;
@@ -409,6 +489,7 @@
 		};
 		FC40C3971C898B24001A31D3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A7BDBA55974E9D4F69ABFD1 /* Pods-PressTheButton.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PressTheButton/Info.plist;
@@ -485,6 +566,7 @@
 				FC40C3971C898B24001A31D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FC40C3981C898B24001A31D3 /* Build configuration list for PBXNativeTarget "PressTheButtonTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +575,7 @@
 				FC40C39A1C898B24001A31D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FC40C39B1C898B24001A31D3 /* Build configuration list for PBXNativeTarget "PressTheButtonUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +584,7 @@
 				FC40C39D1C898B24001A31D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
