@@ -1,0 +1,5 @@
+We used Icomania as our design inspiration.
+
+We mimicked the loading start screen, which shows the logo for Icomania on a black and grey background. Since we don’t have a logo for our mini-app we just mimicked the background when the app loads, before it gets to our game screen.
+
+This design element was especially appealing because it gives a meaningful transition to the game. Without this simple and appealing load screen, the app transitions directly from the iPhone home screen to the game without a proper introduction.
