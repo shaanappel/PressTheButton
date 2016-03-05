@@ -68,7 +68,6 @@ class EasyViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
             
-        self.runSpinner()
         timer = NSTimer.scheduledTimerWithTimeInterval(buttonMoveInterval, target: self, selector: Selector("moveButton"), userInfo: nil, repeats: true)
         youWonImage.hidden = true
         movingButton.hidden = false

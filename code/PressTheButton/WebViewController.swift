@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftSpinner
 
 class WebViewController: UIViewController {
     var URL = ""
@@ -26,6 +27,30 @@ class WebViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        SwiftSpinner.show("Loading Website...").addTapHandler({
+            print("tapped")
+            SwiftSpinner.hide()
+            }, subtitle: "Tap to hide Spinner!")
+        
+        
+        
+        delay(seconds: 2.0, completion: {
+            SwiftSpinner.hide()
+        })
+    }
+    
+    func delay(seconds seconds: Double, completion:()->()) {
+        let popTime = dispatch_time(DISPATCH_TIME_NOW, Int64( Double(NSEC_PER_SEC) * seconds ))
+        
+        dispatch_after(popTime, dispatch_get_main_queue()) {
+            completion()
+        }
+    }
+    
+    
 
 
 }
