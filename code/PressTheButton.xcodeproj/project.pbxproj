@@ -16,6 +16,9 @@
 		FC40C3861C898B24001A31D3 /* PressTheButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC40C3851C898B24001A31D3 /* PressTheButtonTests.swift */; };
 		FC40C3911C898B24001A31D3 /* PressTheButtonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC40C3901C898B24001A31D3 /* PressTheButtonUITests.swift */; };
 		FCB2BDF61C8A017400163E2A /* EasyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB2BDF51C8A017400163E2A /* EasyViewController.swift */; };
+		FCD6F70C1C8AC51000D5532F /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD6F70B1C8AC51000D5532F /* WebViewController.swift */; };
+		FCD6F70F1C8AC51E00D5532F /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD6F70D1C8AC51E00D5532F /* TableViewController.swift */; };
+		FCD6F7101C8AC51E00D5532F /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD6F70E1C8AC51E00D5532F /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		FC40C3901C898B24001A31D3 /* PressTheButtonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressTheButtonUITests.swift; sourceTree = "<group>"; };
 		FC40C3921C898B24001A31D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FCB2BDF51C8A017400163E2A /* EasyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyViewController.swift; sourceTree = "<group>"; };
+		FCD6F70B1C8AC51000D5532F /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		FCD6F70D1C8AC51E00D5532F /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		FCD6F70E1C8AC51E00D5532F /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +132,9 @@
 				FCB2BDF51C8A017400163E2A /* EasyViewController.swift */,
 				FC40C3701C898B24001A31D3 /* AppDelegate.swift */,
 				FC40C3721C898B24001A31D3 /* ViewController.swift */,
+				FCD6F70D1C8AC51E00D5532F /* TableViewController.swift */,
+				FCD6F70E1C8AC51E00D5532F /* TableViewCell.swift */,
+				FCD6F70B1C8AC51000D5532F /* WebViewController.swift */,
 				FC40C3741C898B24001A31D3 /* Main.storyboard */,
 				FC40C3771C898B24001A31D3 /* Assets.xcassets */,
 				FC40C3791C898B24001A31D3 /* LaunchScreen.storyboard */,
@@ -340,6 +349,9 @@
 				FCB2BDF61C8A017400163E2A /* EasyViewController.swift in Sources */,
 				FC40C3731C898B24001A31D3 /* ViewController.swift in Sources */,
 				FC40C3711C898B24001A31D3 /* AppDelegate.swift in Sources */,
+				FCD6F7101C8AC51E00D5532F /* TableViewCell.swift in Sources */,
+				FCD6F70F1C8AC51E00D5532F /* TableViewController.swift in Sources */,
+				FCD6F70C1C8AC51000D5532F /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

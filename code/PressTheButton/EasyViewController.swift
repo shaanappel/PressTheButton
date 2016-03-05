@@ -12,26 +12,57 @@ class EasyViewController: UIViewController {
     var timer = NSTimer()
     var difficultyAry = ["Easy", "Medium", "Hard", "Impossible"]
     var currDifficulty = 0
-    var buttonMoveInterval = 1.0
+    var buttonMoveInterval = 0.6
     var buttonMoveDuration = 0.2
+    var buttonMoveDurationAry = [0.2, 0.14, 0.12, 0.005]
 
     @IBOutlet weak var movingButton: UIButton!
     @IBOutlet weak var difficultyLabel: UILabel!
     
+    @IBOutlet weak var retryButton: UIButton!
+    
+   
+    @IBOutlet weak var youWonImage: UIImageView!
     @IBAction func buttonPressed(sender: AnyObject) {
         timer.invalidate()
+        youWonImage.hidden = false
+        
+        retryButton.hidden = false
+        retryButton.userInteractionEnabled = true
+        
+        
+        movingButton.hidden = true
+    }
+    
+    @IBAction func retryButtonPressed(sender: AnyObject) {
+        timer = NSTimer.scheduledTimerWithTimeInterval(buttonMoveInterval, target: self, selector: Selector("moveButton"), userInfo: nil, repeats: true)
+        youWonImage.hidden = true
+        retryButton.hidden = true
+        retryButton.userInteractionEnabled = false
+        movingButton.hidden = false
+        currDifficulty += 1
+        buttonMoveInterval = 0.4
+        if currDifficulty <= difficultyAry.count - 1 {
+            difficultyLabel.text = difficultyAry[currDifficulty]
+            buttonMoveDuration = buttonMoveDurationAry[currDifficulty]
+        } else {
+            difficultyLabel.text = "Good Luck!"
+            buttonMoveDuration = buttonMoveDuration/2
+            buttonMoveInterval = buttonMoveInterval/2
+        }
+        
+        
     }
     
     
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
         
+        movingButton.layer.cornerRadius = movingButton.bounds.size.width/2;
+        retryButton.layer.cornerRadius = 5
+        difficultyLabel.text = difficultyAry[currDifficulty]
         
-    func delay(seconds seconds: Double, completion:()->()) {
-        let popTime = dispatch_time(DISPATCH_TIME_NOW, Int64( Double(NSEC_PER_SEC) * seconds ))
-            
-        dispatch_after(popTime, dispatch_get_main_queue()) {
-                completion()
-        }
     }
         
     override func viewDidAppear(animated: Bool) {
@@ -39,27 +70,23 @@ class EasyViewController: UIViewController {
             
         self.runSpinner()
         timer = NSTimer.scheduledTimerWithTimeInterval(buttonMoveInterval, target: self, selector: Selector("moveButton"), userInfo: nil, repeats: true)
-            
+        youWonImage.hidden = true
+        movingButton.hidden = false
+        retryButton.hidden = true
+        retryButton.userInteractionEnabled = false
     }
         
     func runSpinner() {
             
             
-        SwiftSpinner.show("Connecting \nto Internet...").addTapHandler({
+        SwiftSpinner.show("Loading Game...").addTapHandler({
                 print("tapped")
                 SwiftSpinner.hide()
                 }, subtitle: "Tap to hide Spinner!")
+        
             
             
-        delay(seconds: 3.0, completion: {
-            SwiftSpinner.show("Establishing \nConnection...", animated: false).addTapHandler({
-                    print("tapped")
-                    SwiftSpinner.hide()
-                    }, subtitle: "Tap to hide Spinner!")
-        })
-            
-            
-        delay(seconds: 4.0, completion: {
+        delay(seconds: 2.0, completion: {
                 SwiftSpinner.hide()
         })
             
@@ -91,6 +118,14 @@ class EasyViewController: UIViewController {
             }, completion: nil)
             
     }
+    
+    func delay(seconds seconds: Double, completion:()->()) {
+        let popTime = dispatch_time(DISPATCH_TIME_NOW, Int64( Double(NSEC_PER_SEC) * seconds ))
         
+        dispatch_after(popTime, dispatch_get_main_queue()) {
+            completion()
+        }
+    }
+    
 }
 
